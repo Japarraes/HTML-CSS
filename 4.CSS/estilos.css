@@ -1,0 +1,38 @@
+h1 {
+    color: red;
+    font-size: 50pt;
+}
+
+/*Esto es un comentario del código CSS*/
+
+p {
+    color: blue;
+    font-size: 16pt;
+}
+
+/*Selectores de id*/
+#primera-noticia {
+    color: yellowgreen;
+    font-size: 20pt;
+}
+#segunda-noticia {
+    color: blueviolet;
+    font-size: 20pt;
+}
+
+/*Selectores de class*/
+.Encabezado {
+    color: chartreuse;
+    font-size: 50pt;
+}
+
+/*Selectores para todos los elementos: id, class, ...*/
+*.warning {
+    color: red;
+    font-size: 35pt;
+}
+
+/*Aplicar estilos a varios identificadores*/
+.autor, .fecha, .ubicacion, #primera-noticia {
+    text-decoration: underline;
+}

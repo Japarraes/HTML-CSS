@@ -1,0 +1,45 @@
+.colores {
+    color: green;
+}
+
+.color-hexa {
+    color: #D54916;
+}
+.color-rgb {
+    color: rgb(50, 70, 226)
+}
+.color-rgba {
+    color: rgba(10, 10, 10, 0.6) /*El último parámetro indica la opacidad del color*/
+}
+
+/*Fondos*/
+.fondo {
+    /*background-color: aqua;*/
+    background-image: url("https://acortar.link/bXh0zC");
+    background-position: left bottom;
+}
+.fondo-image {
+    background-image: url("images/michata.jpg");
+    background-position: left bottom;
+}
+
+/* Alto y ancho*/
+.ancho {
+    background-color: #D54916;
+    width: 300px;
+}
+.alto {
+    background-color: #D54916;
+    height: 100px;
+}
+
+.tarjeta {
+    width: 300px;
+    height: 150px;
+    border-style: solid;
+    border-color: chocolate;
+    border-width: 3px;
+    padding: 10px;
+    margin: 20px;
+
+}
