@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: grey;
+}
+.boton {
+    padding: 2rem 7rem;
+    background-color: rgb(70, 196, 196);
+    border-color: rgb(70, 196, 196);
+    border: 0.1rem;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.boton::before {
+    content: 'Pasa por encima';
+    position: absolute;
+    justify-content: center;
+    top: 15%;
+    left: 10%;
+    font-size: x-large;
+}
+
+.boton::after {
+    content: 'Hecho!';
+    position: absolute;
+    justify-content: center;
+    top: 15%;
+    left: 25%; 
+    font-size: x-large;
+    opacity: 0;
+}
+
+.boton:hover::before {
+    opacity: 0;
+}
+.boton:hover::after {
+    color: white;
+    background-color: green;
+    opacity: 1;
+}

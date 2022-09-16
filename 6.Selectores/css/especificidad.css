@@ -1,0 +1,14 @@
+.h1-clase {
+    color: yellow;
+}
+#h1-id h1.h1-clase{
+    color: darkmagenta;
+}
+
+h1 {
+    color: blue; /* !important; Evitar este tipo de etiquetas*/
+}
+
+p {
+    color: red;
+}
