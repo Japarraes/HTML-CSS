@@ -1,0 +1,36 @@
+.contenedor {
+    background-color: rgb(0, 255, 255);
+    padding: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    min-height: 5rem;
+}
+
+.section-1 {
+    background-color: aliceblue;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    flex-direction: column;
+}
+
+.section-main {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 75vw; */
+    flex-grow: 1;
+}
+
+@media (max-width: 640px) {
+    .contenedor {
+        flex-direction: column-reverse;
+    }
+
+    .section-1{
+        flex-direction: row;
+    }
+}
