@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta
+        name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS only -->
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <title>Typography</title>
+        <!-- Bootstrap icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <div class="container py-4">
+            <!-- Basic typography -->
+            <p class="h1">h1. Bootstrap heading</p>
+            <p class="h2">h2. Bootstrap heading</p>
+            <p class="h3">h3. Bootstrap heading</p>
+            <p class="h4">h4. Bootstrap heading</p>
+            <p class="h5">h5. Bootstrap heading</p>
+            <p class="h6">h6. Bootstrap heading</p>
+
+            <!-- Customizing heading -->
+            <p class="h1">Esto es una clase 
+                <small class="text-success">h1 Customizing</small>
+            </p>
+
+            <!-- Display heading -->
+            <h1 class="display-1">display-1</h1>
+            <h2 class="display-2">display-2</h2>
+            <h3 class="display-3">display-3</h3>
+            <h4 class="display-4">display-4</h4>
+            <h5 class="display-5">display-5</h5>
+            <h6 class="display-6">display-6</h6>
+
+            <!-- Lead, highlights, inline text, bold, ... -->
+            <p class="lead">
+                Where does it come from?
+            </p>
+            <p>Contrary to popular belief, <s>Lorem Ipsum is not simply random text</s>. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. <strong>McClintock</strong>, a Latin professor at Hampden-Sydney College in Virginia, <mark>looked up one of the more obscure Latin words</mark>, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from <u>1.10.32 and 1.10.33</u> of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) <del>by Cicero, written in 45 BC</del>. This book is a treatise on the theory of ethics, very popular during the Renaissance. <small>The first line of Lorem Ipsum</small>, <ins>"Lorem ipsum dolor sit amet.."</ins>, comes from a line in <em>section 1.10.32</em>.
+            </p>
+
+            <!-- Abbreviations -->
+            <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
+
+            <!-- Blockcaption and Naming a source -->
+            <figure>
+                <blockquote class="blockquote">
+                    <p>A well-known quote, contained in a blockquote element.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Someone famous in <cite title="Source Title">Source Title</cite>
+                </figcaption>
+            </figure>
+
+            <!-- Aligment text -->
+            <p class="text-start">Texto a la izquierda</p>
+            <p class="text-center">Texto en el centro</p>
+            <p class="text-end">Texto a la derecha</p>
+
+            <!-- List: unstyled, inline, ... -->
+            <p>
+                <ul class="list-unstyled">
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                    <li>Elemento 3</li>
+                </ul>
+                <ul class="list-inline">
+                    <li class="list-inline-item">Elemento 1</li>
+                    <li class="list-inline-item">Elemento 2</li>
+                    <li class="list-inline-item">Elemento 3</li>
+                </ul>
+            </p>
+
+            <!-- Modifing text: upper, lower, capitalize, break.. -->
+            <p class="text-lowercase">TEXTO EN MINÚSCULA</p>
+            <P class="text-uppercase">texto en mayúscula</P>
+            <p class="text-capitalize">texto capitalizado</p>
+            <p class="text-break">
+                mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+            </p>
+
+
+        </div>
+    </body>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+</script>
+<!-- Script for toasts -->
+<script>
+    const toastTrigger = document.getElementById('liveToastBtn')
+    const toastLiveExample = document.getElementById('liveToast')
+    if (toastTrigger) {
+        toastTrigger.addEventListener('click', () => {
+            const toast = new bootstrap.Toast(toastLiveExample)
+
+            toast.show()
+        })
+    }
+</script>
+<script>
+    const toastTrigger2 = document.getElementById('liveToastBtn2')
+    const toastLiveExample2 = document.getElementById('liveToast2')
+    if (toastTrigger2) {
+        toastTrigger2.addEventListener('click', () => {
+            const toast = new bootstrap.Toast(toastLiveExample2)
+
+            toast.show()
+        })
+    }
+</script>
+</html>

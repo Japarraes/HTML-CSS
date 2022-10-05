@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta
+        name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <title>Ejercicio 12 - bootstrap</title>
+    </head>
+    <body>
+        <div class="container">
+            
+            <!-- Jumbotron -->
+            <div class="bg-light p-5 rounded-3">
+                <div class="container-fluid py-2">
+                    <h1 class="display-6 fw-bold">Ejercicio 12 - Bootstrap</h1>
+                    <p class="col-md-8 fs-4">
+                        El botón hace una llamada a una ventana modal.
+                    </p>
+                    <button class="btn btn-primary btn-md" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Click aquí</button>
+                </div>
+            </div>
+
+            <!-- Ventana modal asociado al botón del Jumbotron -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalTitle">Ventana modal</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Esto es un ejemplo de ventana modal asociado a un botón
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulario -->
+            <div class="bg-light p-5 rounded-3 mt-3">
+                <h1 class="display-6">Formulario</h1>
+                <form action="">
+                    <div class="mb-3">
+                        <label class="form-label" for="name">Nombre</label>
+                        <input id="name" type="text" class="form-control" placeholder="Tu nombre">
+                        <div class="form-text">Introduce tu nombre de pila</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="phone">Teléfono</label>
+                        <input id="phone" type="number" class="form-control" placeholder="Tu teléfono">
+                        <div class="form-text">Introduce tu nº de móvil</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="comments">Comentarios</label>
+                        <textarea class="form-control" id="comments" rows="3" placeholder="Tus comentarios"></textarea>
+                        <div class="form-text">Introduce la información más relevante</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+            
+            <!-- Tarjeta -->
+            <div class="bg-light p-5 rounded-3 mt-3">
+                <div class="card mt-lg-3 border-secundary" style="max-width: 540px;">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-4 ">
+                            <img class="img-fluid rounded-start bg-" src="https://www.soymotero.net/sites/default/files/2014-03/002_DIAVEL_CARBON.jpg" alt="image">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-header" style="background-color: white">
+                                <h5 class="card-title">Juan Antonio Parra Espinosa</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Interesado en los lenguajes de programación, sobre todo en Python y Java. El mundo del videojuego y realidad virtual también me llama la atención</p>
+                            </div>
+                            <div class="card-footer" style="background-color: white">
+                                <a href="#" class="fw-bold">japarraes2@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</html>
