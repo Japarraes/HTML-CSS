@@ -1,0 +1,13 @@
+/* Importaciones*/
+//@import "componentes";
+@use "componentes";
+//namespace
+// $color -> componentes.$color
+
+/* Variables*/
+@use "mixins";
+
+/* Styles */
+@use "styles";
+
+@use "builting";

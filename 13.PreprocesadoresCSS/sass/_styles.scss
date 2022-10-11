@@ -1,0 +1,41 @@
+@use "mixins";
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background-color: azure;
+    width: 100%;
+    min-width: 100vh;
+    padding: 0.5rem;
+}
+
+h1 {
+    margin: 0;
+    @include mixins.formato-texto();
+}
+
+p {
+    @include mixins.formato-texto(#abeed2);
+}
+
+/*Anidación de propiedades*/
+.listado {
+    width: 10 rem;
+    background-color: aquamarine;
+    padding: 0.5rem;
+
+    ul {
+        margin: 0 0.5;
+        
+        li {
+            list-style-type: none;
+
+            &:hover {
+                color: white
+            }
+
+        }
+    }
+}
